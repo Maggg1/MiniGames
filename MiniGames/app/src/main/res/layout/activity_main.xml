@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="248dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="3dp"
+        android:fontFamily="@font/kennyblock"
+        android:gravity="center"
+        android:text="MINI GAMES"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="43sp" />
+
+    <!-- Centered ImageView -->
+
+    <!-- Start Button -->
+
+    <ImageView
+        android:id="@+id/centerImage"
+        android:layout_width="267dp"
+        android:layout_height="174dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="290dp"
+        android:contentDescription="Game logo"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/tictactoe"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/wallpaper2"
+        android:fontFamily="@font/kennypixel"
+        android:text="TIC TAC TOE"
+        android:textColor="@android:color/white"
+        android:textColorLink="#C28DDE"
+        android:textSize="24sp"
+        app:cornerRadius="50px" />
+
+    <Button
+        android:id="@+id/rockpaper"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/wallpaper2"
+        android:fontFamily="@font/kennypixel"
+        android:text="ROCK PAPER SCISSORS"
+        android:textColor="@android:color/white"
+        android:textColorLink="#C28DDE"
+        android:textSize="24sp"
+        app:cornerRadius="50px" />
+</RelativeLayout>

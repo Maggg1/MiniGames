@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background5">
+
+    <!-- Exit Button -->
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/kennypixel"
+        android:onClick="exitApp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Computer Choice Label -->
+    <TextView
+        android:id="@+id/computer_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exit_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/kennyblock"
+        android:text="Computer: "
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Computer Choice Image -->
+    <ImageView
+        android:id="@+id/computer_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/computer_choice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Image showing computer's choice"
+        tools:ignore="HardcodedText,ImageContrastCheck" />
+
+    <!-- VS Label -->
+    <TextView
+        android:id="@+id/vs_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/computer_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kennyblock"
+        android:text="VS"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!-- Player Choice Image -->
+    <ImageView
+        android:id="@+id/player_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/vs_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Image showing player's choice"
+        tools:ignore="HardcodedText,ImageContrastCheck" />
+
+    <!-- Player Choice Label -->
+    <TextView
+        android:id="@+id/player_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kennyblock"
+        android:text="Player: "
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Result Label -->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result: "
+        android:textSize="18sp"
+        android:layout_below="@id/player_choice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kennyblock"
+        tools:ignore="HardcodedText" />
+
+    <!-- Score Label -->
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your score: 0"
+        android:textSize="18sp"
+        android:layout_below="@id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kennyblock"
+        tools:ignore="HardcodedText" />
+
+    <!-- Button Panel -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/score"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <!-- Rock Button -->
+        <Button
+            android:id="@+id/rock_button"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/kennypixel"
+            android:text="Rock"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <!-- Paper Button -->
+        <Button
+            android:id="@+id/paper_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/kennypixel"
+            android:text="Paper"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <!-- Scissors Button -->
+        <Button
+            android:id="@+id/scissors_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/kennypixel"
+            android:text="Scissors"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+
+</RelativeLayout>
